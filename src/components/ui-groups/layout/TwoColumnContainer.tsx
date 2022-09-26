@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Props, StyledDiv } from "./layout/Container";
+import { Props, StyledDiv } from "./Container";
 
 const TwoColumnContainerDiv = styled(StyledDiv)`
   @media (min-width: ${(props) => props.theme.mediaQuery.lg}px) {

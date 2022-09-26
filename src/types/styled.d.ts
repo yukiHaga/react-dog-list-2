@@ -7,7 +7,10 @@ import "styled-components";
 declare module "styled-components" {
   export interface DefaultTheme {
     mediaQuery: {
-      lg: number;
+      lg: 992;
+    };
+    color: {
+      red: "#F15B5B";
     };
   }
 }

@@ -1,7 +1,16 @@
-import React from "react";
+import { ThemeProvider } from "styled-components";
+import { myTheme } from "./types/my-theme";
+import { Provider } from "./context/Provider";
+import Router from "./Router";
 
 function App() {
-  return <div>アイウエオ</div>;
+  return (
+    <ThemeProvider theme={myTheme}>
+      <Provider>
+        <Router />
+      </Provider>
+    </ThemeProvider>
+  );
 }
 
 export default App;
